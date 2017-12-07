@@ -1,0 +1,2 @@
+<input type="text" ngModel name="field" #field="ngModel" [passwordvalidator]="'/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/'"/>
+<p *ngIf="field?.errors?.passwordvalidator">{{field?.errors?.passwordvalidators}}</p>
