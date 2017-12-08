@@ -8,8 +8,8 @@ Angular-Custom-Directive, it's a module which allow developpers to apply a gener
 
 ## List of Custom Validators 
 
-### Password 
-### Email 
+##### Password 
+##### Email 
 
 ## Password
 Validate password with a regular expression.
@@ -18,9 +18,11 @@ Validate password with a regular expression.
 <input type="text" ngModel name="pwd" #pwd="ngModel" [passwordval]="'^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})'"/>
 <p *ngIf="pwd.errors?.passwordval">Password not valid</p>
 
+```
 ## Email
 Validate email with a prefix 
 
 ```html
 <input type="text" ngModel name="email" #email="ngModel" [emailval]="@gmail.com"/>
 <p *ngIf="email.errors?.emailval">Email not valid</p>
+```
